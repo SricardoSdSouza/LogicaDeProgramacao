@@ -1,3 +1,4 @@
+'''FATORIAL'''
 n = int(input('Informe um número: '))
 c = n
 f = 1

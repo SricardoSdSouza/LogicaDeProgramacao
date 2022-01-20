@@ -1,3 +1,5 @@
+'''BUSCA BINÁRIA'''
+
 def busca(lista,x):
     primeiro = 0
     ultimo = len(lista)-1
