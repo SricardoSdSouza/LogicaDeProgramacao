@@ -62,4 +62,22 @@ elif valor > 2000.00:
     salario = valor + reajuste
     print(f'Novo salario: {salario:.2f}')
     print(f'Reajuste ganho: {reajuste:.2f}')
-    print(f'Em percentual: 4 %')
+    print(f'Em percentual: 4 %'
+
+'''Usando função'''
+def novo_sal(sal):
+    if 0 <= sal <= 400.00:
+        tax = 15
+    elif 400.00 < sal <= 800.00:
+        tax = 12
+    elif 800.00 < sal <= 1200.00:
+        tax = 10
+    elif 1200.00 < sal <= 2000.00:
+        tax = 7
+    elif sal > 2000.00:
+        tax = 4
+    novo_salario = (tax/100) * sal
+    print('Novo salario: {:.2f}\nReajuste ganho: {:.2f}\nEm percentual: {} %'.format(sal+novo_salario, novo_salario, tax))
+
+salario = float(input())
+novo_sal(salario)
