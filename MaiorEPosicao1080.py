@@ -11,3 +11,13 @@ Exemplo de Entrada	                Exemplo de Saída
 ...
 8
 '''
+numeros = dict()
+maior = 0
+for i in range(100):
+    n = int(input())
+    if n > maior:
+        maior = n
+        numeros[n] = i # acicionará o valor como key do dicionário e gurardará a posição como valor
+
+print(maior)
+print(numeros[maior]+1) # imprime o valor da posição (se o indice 0 = posição 1, por isso soma + 1 ao fim)
